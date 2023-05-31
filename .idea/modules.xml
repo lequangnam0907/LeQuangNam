@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ecommerce-Springboot/Admin/Admin.iml" filepath="$PROJECT_DIR$/Ecommerce-Springboot/Admin/Admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ecommerce-Springboot/Customer/Customer.iml" filepath="$PROJECT_DIR$/Ecommerce-Springboot/Customer/Customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ecommerce-Springboot/Ecommerce-Springboot.iml" filepath="$PROJECT_DIR$/Ecommerce-Springboot/Ecommerce-Springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ecommerce-Springboot/Library/Library.iml" filepath="$PROJECT_DIR$/Ecommerce-Springboot/Library/Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springboot-ecommerce-step-by-step-main.iml" filepath="$PROJECT_DIR$/.idea/springboot-ecommerce-step-by-step-main.iml" />
+    </modules>
+  </component>
+</project>

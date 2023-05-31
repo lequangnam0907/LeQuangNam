@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head th:replace="fragments :: header">
+</head>
+<body id="page-top">
+<!-- Page Wrapper -->
+<div id="wrapper">
+    <!-- Sidebar -->
+    <ul th:replace="fragments :: sidebar">
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav th:replace="fragments :: topbar"></nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <form class="form-horizontal" th:action="@{/update-user/{id} (id = ${userDto.id})}" method="post" enctype="multipart/form-data" th:object = "${userDto}">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend>ADD USER</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="firstName">USER FIRSTNAME</label>
+                            <div class="col-md-4">
+                                <input id="firstname" th:field = "*{firstName}" name="firstName" class="form-control input-md" required="" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="lastName">USER LASTNAME</label>
+                            <div class="col-md-4">
+                                <input id="lastName" th:field = "*{lastName}" name="lastName" class="form-control input-md" required="" type="text">
+                            </div>
+                        </div>
+
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="username">USERNAME </label>
+                            <div class="col-md-4">
+                                <input id="username" th:field = "*{username}" name="username" class="form-control input-md" required="" type="text">
+
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="password">PASSWORD</label>
+                            <div class="col-md-4">
+                                <input id="password" th:field = "*{password}" name="password" class="form-control input-md" required="" type="text">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="carNumber">CAR NUMBER</label>
+                            <div class="col-md-4">
+                                <input id="carNumber" name="carNumber" th:field = "*{carNumber}" class="form-control input-md" required="" type="text">
+                            </div>
+                        </div>
+
+
+
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer th:replace="fragments :: footer">
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a th:replace="fragments :: scroll">
+</a>
+
+<!-- Logout Modal-->
+
+<!-- Bootstrap core JavaScript-->
+<div th:replace="fragments :: script"></div>
+<script th:src="@{/js/categories.js}"></script>
+
+</body>
+
+</html>
